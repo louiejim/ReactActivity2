@@ -4,17 +4,34 @@ import Navbar from "react-bootstrap/Navbar";
 import Badge from "react-bootstrap/Badge";
 import "./index.css";
 
-export default class Navbars extends Component {
-  render() {
-    return (
-      <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand>E-Commerce App</Navbar.Brand>
-          <h6>
-            🛒<Badge bg="secondary">{this.props.totalCount()}</Badge>
-          </h6>
-        </Container>
-      </Navbar>
-    );
-  }
+// export default class Navbars extends Component {
+//   render() {
+//     return (
+//       <Navbar expand="lg" className="bg-body-tertiary">
+//         <Container>
+//           <Navbar.Brand>E-Commerce App</Navbar.Brand>
+//           <h6>
+//             🛒<Badge bg="secondary">{this.props.totalCount()}</Badge>
+//           </h6>
+//         </Container>
+//       </Navbar>
+//     );
+//   }
+// }
+
+import React from "react";
+
+function Navbars(props) {
+  return (
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand>E-Commerce App</Navbar.Brand>
+        <h6>
+          🛒<Badge bg="secondary">{props.totalCount}</Badge>
+        </h6>
+      </Container>
+    </Navbar>
+  );
 }
+
+export default Navbars;
