@@ -2,6 +2,7 @@ export const PRODUCTS_DATA = [
   {
     id: 1,
     title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    value: 0,
     price: 109.95,
     description:
       "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
@@ -11,11 +12,11 @@ export const PRODUCTS_DATA = [
       rate: 3.9,
       count: 120,
     },
-    isClicked: false,
   },
   {
     id: 2,
     title: "Mens Casual Premium Slim Fit T-Shirts ",
+    value: 0,
     price: 22.3,
     description:
       "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
@@ -26,11 +27,11 @@ export const PRODUCTS_DATA = [
       rate: 4.1,
       count: 259,
     },
-    isClicked: false,
   },
   {
     id: 3,
     title: "Mens Cotton Jacket",
+    value: 0,
     price: 55.99,
     description:
       "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
@@ -40,10 +41,10 @@ export const PRODUCTS_DATA = [
       rate: 4.7,
       count: 500,
     },
-    isClicked: false,
   },
   {
     id: 4,
+    value: 0,
     title: "Mens Casual Slim Fit",
     price: 15.99,
     description:
@@ -54,10 +55,10 @@ export const PRODUCTS_DATA = [
       rate: 2.1,
       count: 430,
     },
-    isClicked: false,
   },
   {
     id: 5,
+    value: 0,
     title:
       "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
     price: 695,
@@ -69,10 +70,10 @@ export const PRODUCTS_DATA = [
       rate: 4.6,
       count: 400,
     },
-    isClicked: false,
   },
   {
     id: 6,
+    value: 0,
     title: "Solid Gold Petite Micropave ",
     price: 168,
     description:
@@ -83,10 +84,10 @@ export const PRODUCTS_DATA = [
       rate: 3.9,
       count: 70,
     },
-    isClicked: false,
   },
   {
     id: 7,
+    value: 0,
     title: "White Gold Plated Princess",
     price: 9.99,
     description:
@@ -97,10 +98,10 @@ export const PRODUCTS_DATA = [
       rate: 3,
       count: 400,
     },
-    isClicked: false,
   },
   {
     id: 8,
+    value: 0,
     title: "Pierced Owl Rose Gold Plated Stainless Steel Double",
     price: 10.99,
     description:
@@ -111,10 +112,10 @@ export const PRODUCTS_DATA = [
       rate: 1.9,
       count: 100,
     },
-    isClicked: false,
   },
   {
     id: 9,
+    value: 0,
     title: "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
     price: 64,
     description:
@@ -125,10 +126,10 @@ export const PRODUCTS_DATA = [
       rate: 3.3,
       count: 203,
     },
-    isClicked: false,
   },
   {
     id: 10,
+    value: 0,
     title: "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
     price: 109,
     description:
@@ -139,10 +140,10 @@ export const PRODUCTS_DATA = [
       rate: 2.9,
       count: 470,
     },
-    isClicked: false,
   },
   {
     id: 11,
+    value: 0,
     title:
       "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
     price: 109,
@@ -154,10 +155,10 @@ export const PRODUCTS_DATA = [
       rate: 4.8,
       count: 319,
     },
-    isClicked: false,
   },
   {
     id: 12,
+    value: 0,
     title:
       "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
     price: 114,
@@ -169,10 +170,10 @@ export const PRODUCTS_DATA = [
       rate: 4.8,
       count: 400,
     },
-    isClicked: false,
   },
   {
     id: 13,
+    value: 0,
     title: "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
     price: 599,
     description:
@@ -183,10 +184,10 @@ export const PRODUCTS_DATA = [
       rate: 2.9,
       count: 250,
     },
-    isClicked: false,
   },
   {
     id: 14,
+    value: 0,
     title:
       "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
     price: 999.99,
@@ -198,10 +199,10 @@ export const PRODUCTS_DATA = [
       rate: 2.2,
       count: 140,
     },
-    isClicked: false,
   },
   {
     id: 15,
+    value: 0,
     title: "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
     price: 56.99,
     description:
@@ -212,10 +213,10 @@ export const PRODUCTS_DATA = [
       rate: 2.6,
       count: 235,
     },
-    isClicked: false,
   },
   {
     id: 16,
+    value: 0,
     title:
       "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
     price: 29.95,
@@ -227,10 +228,10 @@ export const PRODUCTS_DATA = [
       rate: 2.9,
       count: 340,
     },
-    isClicked: false,
   },
   {
     id: 17,
+    value: 0,
     title: "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
     price: 39.99,
     description:
@@ -241,10 +242,10 @@ export const PRODUCTS_DATA = [
       rate: 3.8,
       count: 679,
     },
-    isClicked: false,
   },
   {
     id: 18,
+    value: 0,
     title: "MBJ Women's Solid Short Sleeve Boat Neck V ",
     price: 9.85,
     description:
@@ -255,10 +256,10 @@ export const PRODUCTS_DATA = [
       rate: 4.7,
       count: 130,
     },
-    isClicked: false,
   },
   {
     id: 19,
+    value: 0,
     title: "Opna Women's Short Sleeve Moisture",
     price: 7.95,
     description:
@@ -269,10 +270,10 @@ export const PRODUCTS_DATA = [
       rate: 4.5,
       count: 146,
     },
-    isClicked: false,
   },
   {
     id: 20,
+    value: 0,
     title: "DANVOUY Womens T Shirt Casual Cotton Short",
     price: 12.99,
     description:

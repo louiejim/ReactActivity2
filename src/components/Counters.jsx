@@ -1,6 +1,6 @@
-import { Component } from "react";
 import "./index.css";
 import Counter from "./Counter";
+import Container from "react-bootstrap/Container";
 
 // export default class Counters extends Component {
 //   render() {
@@ -24,17 +24,19 @@ import React from "react";
 
 function Counters(props) {
   return (
-    <div className="container">
-      {props.counters.map((counter) => (
-        <Counter
-          key={counter.id}
-          counter={counter}
-          onDelete={props.onDelete}
-          onIncrement={props.onIncrement}
-          onDecrement={props.onDecrement}
-        />
-      ))}
-    </div>
+    <Container>
+      <div className="align-container">
+        {props.counters.map((counter) => (
+          <Counter
+            key={counter.id}
+            counter={counter}
+            onDelete={props.onDelete}
+            onIncrement={props.onIncrement}
+            onDecrement={props.onDecrement}
+          />
+        ))}
+      </div>
+    </Container>
   );
 }
 

@@ -1,9 +1,8 @@
-import { Component } from "react";
 import "./index.css";
 import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import CardGroup from "react-bootstrap/CardGroup";
 import Accordion from "react-bootstrap/Accordion";
-import { FaPesoSign } from "react-icons/fa6";
-
 // export default class Counter extends Component {
 //   render() {
 //     return (
@@ -61,56 +60,67 @@ import { FaPesoSign } from "react-icons/fa6";
 
 import React from "react";
 
-function Counter(props) {
+function Counter({ counter, onIncrement, onDecrement }) {
   return (
-    <div className="containers">
-      <div className="card-container">
-        <h5>{props.counter.title}</h5>
-        <h6>
-          <FaPesoSign style={{ height: 15 }} />
-          {props.counter.price}
-        </h6>
-        <img src={props.counter.image}></img>\
-        <br />
-        <Accordion defaultActiveKey="1">
-          <Accordion.Item eventKey="0">
-            <Accordion.Header>DESCRIPTION</Accordion.Header>
-            <Accordion.Body>{props.counter.description}</Accordion.Body>
-          </Accordion.Item>
-        </Accordion>
-        <br />
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          {props.counter.value === 0 ? (
-            <Button
-              variant="outline-light"
-              style={{ color: "black" }}
-              onClick={() => props.onIncrement(props.counter.id)}
-            >
-              🛒ADD TO CART
-            </Button>
-          ) : (
-            <div>
-              <button
-                className="btn btn-primary me-4"
-                onClick={() => props.onIncrement(props.counter.id)}
+    <CardGroup>
+      <Card style={{ width: "18rem", margin: "30px 10px 10px 10px" }}>
+        <Card.Body>
+          <Card.Title>{counter.title}</Card.Title>
+          <Card.Text> &#8369; {counter.price}</Card.Text>
+          <br />
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <Card.Img
+              variant="top"
+              src={counter.image}
+              style={{
+                height: "10rem",
+                width: "10rem",
+                position: "relative",
+              }}
+            />
+          </div>
+        </Card.Body>
+        <Card.Footer>
+          <Accordion defaultActiveKey="1">
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>DESCRIPTION</Accordion.Header>
+              <Accordion.Body>{counter.description}</Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+          <br />
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            {counter.value === 0 ? (
+              <Button
+                variant="outline-light"
+                style={{ color: "black" }}
+                onClick={() => onIncrement(counter.id)}
               >
-                +
-              </button>
-              {props.counter.value}
-              <button
-                className="btn btn-primary ms-4"
-                disabled={props.counter.value === 0}
-                onClick={() => {
-                  props.onDecrement(props.counter.id);
-                }}
-              >
-                -
-              </button>
-            </div>
-          )}
-        </div>
-      </div>
-    </div>
+                🛒ADD TO CART
+              </Button>
+            ) : (
+              <div>
+                <button
+                  className="btn btn-primary me-4"
+                  onClick={() => onIncrement(counter.id)}
+                >
+                  +
+                </button>
+                {counter.value}
+                <button
+                  className="btn btn-primary ms-4"
+                  disabled={counter.value === 0}
+                  onClick={() => {
+                    onDecrement(counter.id);
+                  }}
+                >
+                  -
+                </button>
+              </div>
+            )}
+          </div>
+        </Card.Footer>
+      </Card>
+    </CardGroup>
   );
 }
 
