@@ -21,6 +21,8 @@ function ProductForm({ onSubmit }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log("prevent");
+    console.log(form);
     onSubmit(form);
   };
   const handleChange = ({ currentTarget: input }) => {
