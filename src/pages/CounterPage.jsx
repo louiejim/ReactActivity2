@@ -9,24 +9,25 @@ import { MdAddShoppingCart } from "react-icons/md";
 function CounterPage({ counters, onIncrement, onDecrement }) {
   return (
     <Container>
-      <Container>
-        <br />
-        <Row style={{ justifyContent: "flex-end", textAlign: "right" }}>
-          <Col xs={4}>
-            <Link to="/addProduct">
-              <Button variant="primary">
-                ADD PRODUCT <MdAddShoppingCart />
-              </Button>
-            </Link>
-          </Col>
-        </Row>
-      </Container>
+      <br />
       <Row>
-        <Counters
-          counters={counters}
-          onIncrement={onIncrement}
-          onDecrement={onDecrement}
-        ></Counters>
+        <Col xs={6}>
+          <Link to="/addProduct">
+            <Button variant="primary">
+              ADD PRODUCT <MdAddShoppingCart />
+            </Button>
+          </Link>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col xs={12}>
+          <Counters
+            counters={counters}
+            onIncrement={onIncrement}
+            onDecrement={onDecrement}
+          ></Counters>
+        </Col>
       </Row>
     </Container>
   );

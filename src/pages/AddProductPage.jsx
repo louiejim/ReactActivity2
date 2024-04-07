@@ -1,7 +1,16 @@
-import React from "react";
-import AddProduct from "../components/AddProduct";
+import React, { useEffect, useState } from "react";
+import ProductForm from "../components/ProductForm";
+
 function AddProductPage() {
-  return <AddProduct></AddProduct>;
+  const handleSubmit = () => {
+    console.log("from add employee page handle submit");
+  };
+
+  return (
+    <div>
+      <ProductForm onSubmit={handleSubmit}></ProductForm>
+    </div>
+  );
 }
 
 export default AddProductPage;
