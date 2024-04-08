@@ -3,6 +3,8 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 import Accordion from "react-bootstrap/Accordion";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 // export default class Counter extends Component {
 //   render() {
 //     return (
@@ -59,6 +61,7 @@ import Accordion from "react-bootstrap/Accordion";
 // }
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Counter({ counter, onIncrement, onDecrement }) {
   return (
@@ -117,6 +120,18 @@ function Counter({ counter, onIncrement, onDecrement }) {
                 </button>
               </div>
             )}
+          </div>
+          <br />
+          <div>
+            <Col xs={12}>
+              <Row>
+                <Link to={`/editProduct/${counter.id}`}>
+                  <Button variant="primary" style={{ width: "100%" }}>
+                    EDIT PRODUCT
+                  </Button>
+                </Link>
+              </Row>
+            </Col>
           </div>
         </Card.Footer>
       </Card>

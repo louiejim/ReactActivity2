@@ -1,10 +1,11 @@
-import { Component, useState } from "react";
+import { useState } from "react";
 import Navbars from "./components/Navbars";
 import { Routes, Route, Navigate } from "react-router-dom";
 import React from "react";
 import CounterPage from "./pages/CounterPage";
 import { PRODUCTS_DATA } from "./PRODUCTS_DATA";
 import AddProductPage from "./pages/AddProductPage";
+import EditProductPage from "./pages/EditProductPage";
 
 function App() {
   const [counters, setCounters] = useState(PRODUCTS_DATA);
@@ -62,6 +63,10 @@ function App() {
           <Route
             path="/addProduct"
             element={<AddProductPage></AddProductPage>}
+          />
+          <Route
+            path="/editProduct/:id"
+            element={<EditProductPage counters={counters} />}
           />
         </Routes>
       </div>
